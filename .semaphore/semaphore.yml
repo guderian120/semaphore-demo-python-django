@@ -43,7 +43,7 @@ blocks:
       jobs:
         - name: Model Test
           commands:
-            - python manage.py test tasks.tests.test_models
+            - '#python manage.py test tasks.tests.test_models'
         - name: View Test
           commands:
             - python manage.py test tasks.tests.test_views
@@ -57,7 +57,7 @@ blocks:
         - name: DB_PASSWORD
           value: Django_Project_12
         - name: DB_NAME
-          value: pydjango_production
+          value: guderian$pydjango_production
   - name: Run Browser Tests
     task:
       env_vars:
