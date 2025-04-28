@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('SECRET_KEY', 'g!^gs#bib&6sn5ow5i&ho0bj4dlz(y%v9!h-fnmh#6h=u_&ip=')
+SECRET_KEY = os.getenv('SECRET_KEY', 'None')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -45,8 +45,7 @@ INSTALLED_APPS = [
     'tasks.apps.TasksConfig',
 ]
 
-SITE_ID = 1
-SITE_URL = 'http://127.0.0.1:8732/'
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -59,7 +58,6 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'pydjango_ci_integration.urls'
-# In your settings.py, change:
 TEST_RUNNER = 'django.test.runner.DiscoverRunner'  # Default Django runner
 TEMPLATES = [
     {
@@ -86,9 +84,9 @@ WSGI_APPLICATION = 'pydjango_ci_integration.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': os.getenv('DB_ENGINE', 'django.db.backends.mysql'),
-        'NAME': os.getenv('DB_NAME', 'pydjango'),
-        'USER': os.getenv('DB_USER', 'admin'),
-        'PASSWORD': os.getenv('DB_PASSWORD', 'Django_Project_12'),
+        'NAME': os.getenv('DB_NAME', 'None'),
+        'USER': os.getenv('DB_USER', 'None'),
+        'PASSWORD': os.getenv('DB_PASSWORD', 'None'),
         'HOST': os.getenv('DB_HOST', '127.0.0.1'),
         'PORT': os.getenv('DB_PORT', '3306')
     }
