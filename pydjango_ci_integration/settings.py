@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     # Contributed apps
-    'django_nose',
+    #'django_nose',
 
     # Custom apps
     'tasks.apps.TasksConfig',
@@ -59,7 +59,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'pydjango_ci_integration.urls'
-
+# In your settings.py, change:
+TEST_RUNNER = 'django.test.runner.DiscoverRunner'  # Default Django runner
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -86,8 +87,8 @@ DATABASES = {
     'default': {
         'ENGINE': os.getenv('DB_ENGINE', 'django.db.backends.mysql'),
         'NAME': os.getenv('DB_NAME', 'pydjango'),
-        'USER': os.getenv('DB_USER', 'root'),
-        'PASSWORD': os.getenv('DB_PASSWORD', ''),
+        'USER': os.getenv('DB_USER', 'admin'),
+        'PASSWORD': os.getenv('DB_PASSWORD', 'Django_Project_12'),
         'HOST': os.getenv('DB_HOST', '127.0.0.1'),
         'PORT': os.getenv('DB_PORT', '3306')
     }
