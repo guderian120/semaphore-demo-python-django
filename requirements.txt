@@ -5,9 +5,7 @@ Django
 #isort==6.0.1
 #mccabe==0.7.0
 mysqlclient==2.2.7
-#platformdirs==4.3.7
-pylint==3.3.6
+pylint
 pylint-django
-pylint-plugin-utils==0.8.2
-sqlparse==0.5.3
-#tomlkit==0.13.2
+pylint-plugin-utils
+sqlparse
