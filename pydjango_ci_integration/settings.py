@@ -58,7 +58,9 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'pydjango_ci_integration.urls'
+
 TEST_RUNNER = 'django.test.runner.DiscoverRunner'  # Default Django runner
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -112,13 +114,9 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 # Use nose to run all tests
-TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
+
 
 # Tell nose to measure coverage on the tasks app
-NOSE_ARGS = [
-    '--with-coverage',
-    '--cover-package=tasks'
-]
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
