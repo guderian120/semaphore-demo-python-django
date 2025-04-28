@@ -7,7 +7,7 @@ Django
 mysqlclient==2.2.7
 #platformdirs==4.3.7
 pylint==3.3.6
-pylint-django==2.6.1
+pylint-django
 pylint-plugin-utils==0.8.2
 sqlparse==0.5.3
 #tomlkit==0.13.2
