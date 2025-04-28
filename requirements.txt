@@ -6,6 +6,7 @@ Django
 #mccabe==0.7.0
 mysqlclient==2.2.7
 pylint
+selenium
 pylint-django
 pylint-plugin-utils
 sqlparse
