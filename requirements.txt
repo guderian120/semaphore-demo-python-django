@@ -1,7 +1,7 @@
 asgiref==3.8.1
 #astroid==3.3.9
 #dill==0.4.0
-Django==5.2
+Django
 #isort==6.0.1
 #mccabe==0.7.0
 mysqlclient==2.2.7
