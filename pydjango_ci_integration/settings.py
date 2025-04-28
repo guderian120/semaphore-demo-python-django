@@ -123,6 +123,11 @@ NOSE_ARGS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 
+
+SITE_ID = 1
+SITE_URL = 'http://127.0.0.1:8732/'
+
+
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
