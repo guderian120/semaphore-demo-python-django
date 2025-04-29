@@ -1,6 +1,16 @@
-Awesome, thanks for sharing all of that. Here's a polished and professional `README.md` you can drop into your GitHub repo. I've cleaned up the language, organized the flow, and removed placeholders so it looks natural and human-written.
 
----
+
+# Django CI/CD with Semaphore and PythonAnywhere
+
+![Build](https://semaphoreci.com/api/v1/YOUR_USERNAME/YOUR_REPO/branches/main/badge.svg)
+![Python Version](https://img.shields.io/badge/python-3.8-blue.svg)
+![Django Version](https://img.shields.io/badge/django-3.2-green.svg)
+![License](https://img.shields.io/github/license/YOUR_USERNAME/YOUR_REPO)
+![Last Commit](https://img.shields.io/github/last-commit/YOUR_USERNAME/YOUR_REPO)
+![Code Style](https://img.shields.io/badge/code%20style-pylint-yellow.svg)
+![Deployed](https://img.shields.io/badge/deployed-PythonAnywhere-lightgrey)
+
+This project demonstrates a complete CI/CD pipeline using **Django**, **Semaphore**, and **PythonAnywhere**. It covers development setup, continuous integration, and automated deployment using SSH.
 
 # Django CI/CD with Semaphore and PythonAnywhere
 
