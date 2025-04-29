@@ -4,8 +4,8 @@
 
 ![Python Version](https://img.shields.io/badge/python-3.8-blue.svg)
 ![Django Version](https://img.shields.io/badge/django-3.2-green.svg)
-![License](https://img.shields.io/github/license/YOUR_USERNAME/YOUR_REPO)
-![Last Commit](https://img.shields.io/github/last-commit/YOUR_USERNAME/YOUR_REPO)
+![License](https://img.shields.io/github/license/guderian120/semaphore-demo-python-django)
+![Last Commit](https://img.shields.io/github/last-commit/guderian120/semaphore-demo-python-django)
 ![Code Style](https://img.shields.io/badge/code%20style-pylint-yellow.svg)
 ![Deployed](https://img.shields.io/badge/deployed-PythonAnywhere-lightgrey)
 
