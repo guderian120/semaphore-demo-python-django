@@ -47,10 +47,7 @@ blocks:
         - name: View Test
           commands:
             - '#python manage.py test tasks.tests.test_views'
-      env_vars:
-        - name: DJANGO_TEST_ENV
-          value: true
-        
+      
   - name: Run Browser Tests
     task:
       env_vars:
