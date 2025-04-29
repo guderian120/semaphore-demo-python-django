@@ -2,7 +2,6 @@
 
 # Django CI/CD with Semaphore and PythonAnywhere
 
-![Build](https://semaphoreci.com/api/v1/YOUR_USERNAME/YOUR_REPO/branches/main/badge.svg)
 ![Python Version](https://img.shields.io/badge/python-3.8-blue.svg)
 ![Django Version](https://img.shields.io/badge/django-3.2-green.svg)
 ![License](https://img.shields.io/github/license/YOUR_USERNAME/YOUR_REPO)
