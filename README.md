@@ -10,7 +10,8 @@
 ![Deployed](https://img.shields.io/badge/deployed-PythonAnywhere-lightgrey)
 
 
-# Django CI/CD with Semaphore and PythonAnywhere Live Project (https://guderian.pythonanywhere.com)
+# Django CI/CD with Semaphore and PythonAnywhere Live Project 
+[Live Project here ](https://guderian.pythonanywhere.com)
 
 This project demonstrates a complete CI/CD pipeline using **Django**, **Semaphore**, and **PythonAnywhere**. It covers development setup, continuous integration, and automated deployment using SSH.
 
