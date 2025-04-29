@@ -49,7 +49,7 @@ blocks:
             - '#python manage.py test tasks.tests.test_views'
       env_vars:
         - name: DJANGO_TEST_ENV
-          value: True
+          value: true
         
   - name: Run Browser Tests
     task:

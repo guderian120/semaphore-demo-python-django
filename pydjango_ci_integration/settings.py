@@ -83,7 +83,7 @@ WSGI_APPLICATION = 'pydjango_ci_integration.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
-if os.environ.get('DJANGO_TEST_ENV') == 'True':
+if os.environ.get('DJANGO_TEST_ENV') == 'true':
     DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
