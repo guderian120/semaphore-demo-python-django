@@ -3,7 +3,7 @@ name: Semaphore Python / Django Example Pipeline
 agent:
   machine:
     type: e1-standard-2
-    os_image: ubuntu2004
+    os_image: ubuntu
 global_job_config:
   prologue:
     commands:
@@ -48,16 +48,9 @@ blocks:
           commands:
             - '#python manage.py test tasks.tests.test_views'
       env_vars:
-        - name: API_TOKEN
-          value: 92ddb8cec0f75899e555184f22dc98d6f1bd7918
-        - name: DB_HOST
-          value: guderian.mysql.pythonanywhere-services.com
-        - name: DB_USER
-          value: guderian
-        - name: DB_PASSWORD
-          value: Django_Project_12
-        - name: DB_NAME
-          value: guderian$pydjango_production
+        - name: DJANGO_TEST_ENV
+          value: True
+        
   - name: Run Browser Tests
     task:
       env_vars:

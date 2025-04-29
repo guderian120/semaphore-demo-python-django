@@ -83,16 +83,24 @@ WSGI_APPLICATION = 'pydjango_ci_integration.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
-DATABASES = {
+if os.environ.get('DJANGO_TEST_ENV') == 'True':
+    DATABASES = {
     'default': {
-        'ENGINE': os.getenv('DB_ENGINE', 'django.db.backends.mysql'),
-        'NAME': os.getenv('DB_NAME', 'None'),
-        'USER': os.getenv('DB_USER', 'None'),
-        'PASSWORD': os.getenv('DB_PASSWORD', 'None'),
-        'HOST': os.getenv('DB_HOST', '127.0.0.1'),
-        'PORT': os.getenv('DB_PORT', '3306')
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': ':test_db:',
     }
-}
+}   
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': os.getenv('DB_ENGINE', 'django.db.backends.mysql'),
+            'NAME': os.getenv('DB_NAME', 'None'),
+            'USER': os.getenv('DB_USER', 'None'),
+            'PASSWORD': os.getenv('DB_PASSWORD', 'None'),
+            'HOST': os.getenv('DB_HOST', '127.0.0.1'),
+            'PORT': os.getenv('DB_PORT', '3306')
+        }
+    }
 
 
 # Password validation
