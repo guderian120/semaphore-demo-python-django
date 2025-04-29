@@ -278,7 +278,3 @@ With this setup:
 - Environment-specific settings ensure test safety
 
 Feel free to fork, clone, and contribute to improve this CI/CD flow for Django deployments.
-
----
-
-Let me know if you'd like me to turn this into an actual `README.md` file you can download, or if you want badges or deployment status indicators added at the top.
